@@ -8,8 +8,8 @@ namespace Examen_2019.Models
 {
     public class Marque
     {
-        int Id { get; set; }
-        string Libelle { get; set; }
+        public int Id { get; set; }
+        public string Libelle { get; set; }
         public virtual ICollection<Voiture> voitures { get; set; }
     }
 }

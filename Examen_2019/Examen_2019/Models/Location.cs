@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -13,8 +14,10 @@ namespace Examen_2019.Models
         public Boolean Retour { get; set; }
         public int Prix_Jour { get; set; }
         public virtual Voiture voiture { get; set; }
-        public int voitureId { get; set; }
+        [ForeignKey("Voiture")]
+        public int VoitureId { get; set; }
         public virtual Client client { get; set; }
-        public int clientId { get; set; }
+        [ForeignKey("Client")]
+        public int ClientId { get; set; }
     }
 }

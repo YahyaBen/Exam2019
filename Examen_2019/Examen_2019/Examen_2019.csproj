@@ -4,4 +4,25 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20200713224002_ExamenCreation.cs" />
+    <Compile Remove="Migrations\20200713224002_ExamenCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200713224624_ExamenCreation.cs" />
+    <Compile Remove="Migrations\20200713224624_ExamenCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200713225012_ExamenCreation.cs" />
+    <Compile Remove="Migrations\20200713225012_ExamenCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200713230124_ExamenCreation.cs" />
+    <Compile Remove="Migrations\20200713230124_ExamenCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200713230440_ExamenCreation.cs" />
+    <Compile Remove="Migrations\20200713230440_ExamenCreation.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -13,6 +14,7 @@ namespace Examen_2019.Models
         public DateTime Date_fin { get; set; }
         public int Prix { get; set; }
         public virtual Voiture voiture { get; set; }
+        [ForeignKey("Voiture")]
         public int VoitureId { get; set; }
     }
 }

@@ -12,7 +12,6 @@ namespace Examen_2019.Models
         public string Prenom { get; set; }
         public string Tel { get; set; }
         public string CIN { get; set; }
-        public virtual Voiture voiture { get; set; }
-        public int voitureId { get; set; }
+        public virtual ICollection<Location> Locations { get; set; }
 }
 }
