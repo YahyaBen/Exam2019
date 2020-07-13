@@ -7,10 +7,12 @@ namespace Examen_2019.Models
 {
     public class Assurance
     {
-        int Id { get; set; }
-        string Agence { get; set; }
-        DateTime Date_debut { get; set; }
-        DateTime Date_fin { get; set; }
-        int Prix { get; set; }
+        public int Id { get; set; }
+        public string Agence { get; set; }
+        public DateTime Date_debut { get; set; }
+        public DateTime Date_fin { get; set; }
+        public int Prix { get; set; }
+        public virtual Voiture voiture { get; set; }
+        public int VoitureId { get; set; }
     }
 }

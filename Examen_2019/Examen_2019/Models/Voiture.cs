@@ -13,6 +13,9 @@ namespace Examen_2019.Models
         int Nbr_places { get; set; }
         string Photo_1 { get; set; }
         string Couleur { get; set; }
-
+        public virtual Marque marque { get; set; }
+        public int MarqueId { get; set; }
+        public virtual ICollection<Assurance> assurances { get; set; }
+        public virtual ICollection<Client> clients { get; set; }
     }
 }
