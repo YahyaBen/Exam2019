@@ -58,11 +58,12 @@ namespace Examen_2019.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Date_Debut,Date_fin,Retour,Prix_Jour,VoitureId,ClientId")] Location location)
+        public async Task<IActionResult> Create([Bind("Id,Date_Debut,Date_fin,Prix_Jour,VoitureId,ClientId")] Location location)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(location);
+                location.Retour = false;
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
