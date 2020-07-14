@@ -183,3 +183,5 @@ C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcor
 C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Locations\Edit.cshtml.g.cs
 C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Locations\Index.cshtml.g.cs
 C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Clients\GetData.cshtml.g.cs
+C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Voitures\GetData.cshtml.g.cs

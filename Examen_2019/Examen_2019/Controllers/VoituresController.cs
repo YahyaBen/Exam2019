@@ -161,5 +161,11 @@ namespace Examen_2019.Controllers
         {
             return _context.Voitures.Any(e => e.Id == id);
         }
+        public async Task<IActionResult> GetData(int id)
+        {
+            var voiture = await _context.Voitures.FindAsync(id);
+            ViewBag.Mat = voiture.Matricule;
+            return PartialView(voiture);
+        }
     }
 }
