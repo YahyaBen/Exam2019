@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -13,6 +14,8 @@ namespace Examen_2019.Models
         public int Nbr_portes { get; set; }
         public int Nbr_places { get; set; }
         public string Photo_1 { get; set; }
+        [NotMapped]
+        public IFormFile image { get; set; }
         public string Couleur { get; set; }
         public virtual Marque marque { get; set; }
         [ForeignKey("Marque")]

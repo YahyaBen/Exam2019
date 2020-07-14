@@ -56,10 +56,16 @@ namespace Examen_2019.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Matricule,Nbr_portes,Nbr_places,Photo_1,Couleur,MarqueId")] Voiture voiture)
+        public async Task<IActionResult> Create([Bind("Id,Matricule,Nbr_portes,Nbr_places,image,Couleur,MarqueId")] Voiture voiture)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && (voiture.image.FileName.EndsWith(".jpg") || voiture.image.FileName.EndsWith(".jpeg") || voiture.image.FileName.EndsWith(".png")))
             {
+                
+                voiture.Photo_1 = voiture.Matricule + "_" + voiture.image.FileName;         // Concatenation du nom demander
+                var stream = System.IO.File.Create("wwwroot/ImageVoiture/"+voiture.Photo_1); // Creation fichier 0 Octet
+                voiture.image.CopyTo(stream); // Chargement image vers fichier 0 Octet
+
+
                 _context.Add(voiture);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
