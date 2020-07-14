@@ -48,7 +48,7 @@ namespace Examen_2019.Controllers
         // GET: Locations/Create
         public IActionResult Create()
         {
-            ViewData["ClientId"] = new SelectList(_context.Clients, "Id", "NomComplet"); //(_context.Clients.Select(c=>new{Id=c.Id,NomClient=c.Nom+"-"+c.Prenom,"Id","NomClient)
+            ViewData["ClientId"] = new SelectList(_context.Clients, "Id", "NomComplet"); //ou bien// (_context.Clients.Select(c=>new{Id=c.Id,NomClient=c.Nom+"-"+c.Prenom,"Id","NomClient)
             ViewData["VoitureId"] = new SelectList(_context.Voitures, "Id", "Matricule");
             return View();
         }

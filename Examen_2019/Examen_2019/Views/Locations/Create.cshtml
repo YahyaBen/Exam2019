@@ -39,6 +39,7 @@
             <div class="form-group">
                 <label asp-for="ClientId" class="control-label"></label>
                 <select asp-for="ClientId" class ="form-control" asp-items="ViewBag.ClientId"></select>
+                <div id="Help"> </div>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -53,4 +54,19 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+<script>
+    $(document).ready(function () {
+        $("#ClientId").change(function () {
+            $.get({
+                url: "/Clients/GetData",
+                data: { "id": $("#ClientId").val() },
+                success: function (response) {
+                    $("#Help").html(response);
+                }
+            });
+        })
+    })
+</script>
 }
+

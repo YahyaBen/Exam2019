@@ -148,5 +148,15 @@ namespace Examen_2019.Controllers
         {
             return _context.Clients.Any(e => e.Id == id);
         }
+
+        /////////////// AJAX /////////////////////
+        ///
+        public async Task<IActionResult> GetData(int id)
+        {
+            var client = await _context.Clients.FindAsync(id);
+            ViewBag.Tel = client.Tel;
+            ViewBag.CIN = client.CIN;
+            return PartialView(client);
+        }
     }
 }
