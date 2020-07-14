@@ -167,3 +167,8 @@ C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcor
 C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Marques\Details.cshtml.g.cs
 C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Marques\Edit.cshtml.g.cs
 C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Marques\Index.cshtml.g.cs
+C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Voitures\Create.cshtml.g.cs
+C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Voitures\Delete.cshtml.g.cs
+C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Voitures\Details.cshtml.g.cs
+C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Voitures\Edit.cshtml.g.cs
+C:\Users\Hyrku\source\repos\examen_2019\Examen_2019\Examen_2019\obj\Debug\netcoreapp3.1\Razor\Views\Voitures\Index.cshtml.g.cs
